@@ -1,10 +1,11 @@
+
 import os
 from gi.repository import Gtk, AppIndicator3 as appindicator
-
-#import Haupt_Window
+import sys
 
 def main():
-    indicator = appindicator.Indicator.new("customtray",os.path.abspath('BattChangerIcon.png'), appindicator.IndicatorCategory.SYSTEM_SERVICES)
+    print("Path give is",os.path.abspath(sys.argv[1]))
+    indicator = appindicator.Indicator.new("customtray",os.path.abspath(sys.argv[1]), appindicator.IndicatorCategory.SYSTEM_SERVICES)
     indicator.set_status(appindicator.IndicatorStatus.ACTIVE)
     indicator.set_menu(menu())
     Gtk.main()
@@ -47,3 +48,4 @@ def switch_state(_):
 
 if __name__ == "__main__":
     main()
+

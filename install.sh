@@ -20,10 +20,9 @@ sleep 1s
 echo "Creating auto-start menu entry"
 echo "[Desktop Entry]
       Name=BatteryConservationChanger
-      Exec=/bin/python3.8 /home/$username/BatteryConservationChanger/tray_icon.py
+      Exec=/bin/python3.8 /home/$username/BatteryConservationChanger/tray_icon.py /home/$username/BatteryConservationChanger/BattChangerIcon.png
       Type=Application
       Comment=BatteryConservationChanger" > /home/$username/.config/autostart/battery-conservation-changer.desktop
 
-sleep 1s
 echo "fixing ownership of autostart entry"
 chown -R $username:$username "/home/$username/.config/autostart/battery-conservation-changer.desktop"
