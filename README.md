@@ -7,3 +7,4 @@ To install the BatteryConservationChanger you have to run the install script wit
 
 
 Some Pictures:
+[![](./screenshot.webp)](https://raw.githubusercontent.com/freeifier/screenshot.png)
