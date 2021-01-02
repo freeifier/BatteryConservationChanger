@@ -24,5 +24,6 @@ echo "[Desktop Entry]
       Type=Application
       Comment=BatteryConservationChanger" > /home/$username/.config/autostart/battery-conservation-changer.desktop
 
+sleep 1s
 echo "fixing ownership of autostart entry"
 chown -R $username:$username "/home/$username/.config/autostart/battery-conservation-changer.desktop"
