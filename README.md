@@ -8,3 +8,9 @@ To install the BatteryConservationChanger you have to run the install script wit
 
 Some Pictures:
 [![](./screenshot.webp)](https://raw.githubusercontent.com/freeifier/screenshot.webp)
+
+
+This programm works on Lenovo laptops with battery conservation mode.
+I found out about it because when using Windows there is an Lenovo Utility for it.
+
+And on linux it can be changed by either writing a 1 or a 0 into the file located in /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00$.
