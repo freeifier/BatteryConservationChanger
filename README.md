@@ -19,6 +19,9 @@ And on linux it can be changed by either writing a 1 or a 0 into the file locate
 
 `/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00`
 
+Make sure PyGObject is installed on your system because this is the library creating the tray icon.
+
+
 To install just clone the project by typing 
 
 `git clone https://github.com/freeifier/BatteryConservationChanger`
